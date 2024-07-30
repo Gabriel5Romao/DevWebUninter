@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+.entry{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;   
+    margin: 0 auto
+}
+
+.entry>img+h1{
+    padding: 100px;    
+}
