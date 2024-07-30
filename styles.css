@@ -1,5 +1,19 @@
+root{
+    --myred: #800000
+}
+
 *{
     box-sizing: border-box;
+    background-color: 	#FFFFF0;
+    font-family: "Courier","Palatino Linotype";
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .entry{
@@ -7,9 +21,54 @@
     justify-content: center;
     padding: 30px;
     align-items: center;   
-    margin: 0 auto
+    margin: 0 auto;
+    width:100vw;
+}
+
+.menu{
+    padding-top: 200px;
 }
 
 .entry>img+h1{
     padding: 100px;    
 }
+
+.menu>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu>ul>li{
+    padding: 10px;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.menu>ul>li::after{
+    content: " |";
+}
+
+.menu>ul>li:hover{
+    color: #800000;
+    text-decoration: underline;
+    text-decoration-color: #800000;
+    transition: linear 250ms;
+}
+
+.bottom>*{
+    display:none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+h1{
+    color: #800000;
+}
+
