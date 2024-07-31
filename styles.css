@@ -1,11 +1,7 @@
-root{
-    --myred: #800000
-}
-
 *{
     box-sizing: border-box;
     background-color: 	#FFFFF0;
-    font-family: "Courier","Palatino Linotype";
+    font-family: "Palatino Linotype";
     padding: 0;
 }
 
@@ -18,20 +14,16 @@ body{
 
 .entry{
     display: flex;
-    justify-content: center;
-    padding: 30px;
+    justify-content: space-evenly;
+    padding: 50px;
     align-items: center;   
-    margin: 0 auto;
     width:100vw;
 }
 
 .menu{
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
-.entry>img+h1{
-    padding: 100px;    
-}
 
 .menu>ul{
     display: flex;
@@ -46,16 +38,23 @@ body{
     font-weight: bold;
 }
 
-.menu>ul>li::after{
-    content: " |";
-}
-
-.menu>ul>li:hover{
+.menu>ul>li>a:hover{
     color: #800000;
     text-decoration: underline;
     text-decoration-color: #800000;
-    transition: linear 250ms;
+    transition: color  linear 500ms, text-decoration-color linear 500ms;
 }
+
+
+.menu > ul > li:not(:last-child) > a::after {
+    content: "";
+}
+
+.menu > ul > li:not(:last-child) > a::after {
+    border-right: solid 3px black;
+    padding: 10px;
+}
+
 
 .bottom>*{
     display:none;
@@ -66,9 +65,25 @@ a{
     color: inherit;
 }
 
-
-
-h1{
-    color: #800000;
+.left-container, .right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.left-container>img{
+    padding:20px;
+}
+
+#profile{
+    border-radius:50px;
+}
+
+#logo{
+    width: 200px;
+}
+
+h1{
+    font-size: 4em;
+}
