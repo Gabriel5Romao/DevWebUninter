@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
     background-color: 	#FFFFF0;
-    font-family: "Palatino Linotype";
+    font-family: "#latin_modern_roman_demi10Rg","Palatino Linotype";
+    font-weight: normal;
+    font-style: normal;
     padding: 0;
 }
 
@@ -13,6 +15,7 @@ body{
 }
 
 .entry{
+    margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
@@ -22,6 +25,7 @@ body{
 
 .menu{
     padding-top: 100px;
+    background-color: transparent;
 }
 
 
@@ -42,7 +46,7 @@ body{
     color: #800000;
     text-decoration: underline;
     text-decoration-color: #800000;
-    transition: color  linear 500ms, text-decoration-color linear 500ms;
+    transition: color  linear 300ms, text-decoration-color linear 300ms;
 }
 
 
@@ -70,20 +74,21 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: transparent;
 }
 
-.left-container>img{
-    padding:20px;
-}
 
 #profile{
     border-radius:50px;
+    box-shadow: 0px 0px 100px 10px gray;
 }
 
 #logo{
     width: 200px;
+    background-color: inherit;
 }
 
 h1{
     font-size: 4em;
+    background-color: inherit;
 }
