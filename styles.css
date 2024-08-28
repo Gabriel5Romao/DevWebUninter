@@ -63,6 +63,7 @@ body{
 
 
 .bottom>*{
+    display: none;
     font-size: 1.5em;
 }
 

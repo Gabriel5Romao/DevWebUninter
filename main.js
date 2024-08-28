@@ -56,7 +56,7 @@ contact.addEventListener("click",
 social.addEventListener("click", 
     () => {if(social_b.style.display == "none"){
         reset_visibility()
-        social_b.style.display="block"
+        social_b.style.display="flex"
     }
     else{
         social_b.style.display="none"
