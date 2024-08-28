@@ -31,6 +31,8 @@ function reset_visibility(){
     }
 }
 
+reset_visibility()
+
 education.addEventListener("click", 
     () => {if(education_b.style.display == "none"){
         reset_visibility()
