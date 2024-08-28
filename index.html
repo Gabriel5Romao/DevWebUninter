@@ -18,7 +18,7 @@
         </div>
         
         <div class="right-container">
-            <img id="logo" src="assets\logo_gr.svg">
+            <img id="logo" src="assets\logo_gr.png">
             <h1>
                 Gabriel Romão
             </h1>
@@ -30,18 +30,60 @@
 
     <div class="menu">
         <ul>
-            <li><a href="">Sobre mim</a></li>
-            <li><a href="">Formação</a></li>
-            <li><a href="">Redes Sociais</a></li>
-            <li><a href="">Contato</a></li>
+            <li id="about"><a href="#about">Sobre mim</a></li>
+            <li id="education"><a href="#education">Formação</a></li>
+            <li id="social"><a href="#social">Redes Sociais</a></li>
+            <li id="contact"><a href="#contact">Contato</a></li>
         </ul>
     </div>
 
     <div class="bottom">
-        <div id="about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, at aspernatur? Dolorum quasi in autem expedita, perferendis libero accusantium dignissimos, magnam qui, vero placeat illo. Deserunt obcaecati corrupti omnis incidunt.</div>
-        <div id="education"></div>
-        <div id="social"></div>
-        <div id="contact"></div>
+        <div id="about_b">
+            <p>Sou Gabriel Romão, apaixonado por Matemática e decidi me dedicar ao universo dos Dados por ser
+            apaixonado por computação também.</p>
+
+            <p>Meus hobbies são normalmente ligagos ao aprendizado: self-learning e tópicos relacionados a minha área.</p>
+        </div>
+        <div id="education_b">
+            <ul>
+                <li>Licenciatura em Matemática - 2022</li>
+                <li>Especialista em Tópicos Especiais em Matemática - 2023</li>
+                <li>Especialista em Ensino de Matemática - 2023</li>
+                <li>Mestrando do Mestrado Profissional em Matemática - Cursando</li>
+                <li>Tecnólogo em Ciência de Dados - Cursando</li>
+                <li>Inglês Fluente</li>
+            </ul>
+        </div>
+        <div id="social_b">
+            <a href="https://github.com/gabriel5romao"><img src="assets/GitHub_Logo.png" alt=""></a>
+            
+            <a href="https://youtube.com/algebrizando"><img src="assets/image.png" alt=""> </a>
+        </div>
+
+        <div id="contact_b">
+            <form action="" method="get">
+                <div class="myform">
+                    <label for="name">Nome: </label> <input type="text" name="name" required>   
+                </div>
+
+                <div class="myform">
+                    <label for="email">Email: </label> <input type="text" name="email" required>   
+                </div>
+
+                <div class="myform">
+                    <label for="number">Telefone: </label> <input type="number" name="number" placeholder="" required>   
+                </div>
+
+                <div class="myform">
+                    <label for="subject">Assunto: </label>
+                    <input type="radio" id="aula-particular" name="subject" value="aula"> <label for="aula-particular">Aula Particular</label>
+                    <input type="radio" id="consultoria" name="subject" value="consultoria"> <label for="consultoria">Consultoria</label>
+                </div>
+
+                <input type="submit" id="submit" value="Entrar em Contato">
+                
+            </form>
+        </div>
     </div>
 
 </body>
